@@ -41,6 +41,8 @@ And produces a GraphQL query string like this (without any pretty printing).
 - Creating introspection queries
 - Metadata validation generation using e.g. Schema
 - Useful transformations of the results
+- Comprehensive support for all kinds of things
+- CLJC
 
 ## License
 
