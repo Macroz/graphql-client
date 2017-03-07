@@ -6,7 +6,7 @@ Hiccup-like syntax for [GraphQL](http://graphql.org/) in Clojure(Script).
 
 Takes a GraphQL query in Hiccup syntax like this.
 
-```
+```clj
 (def plan-query [[:plan {:fromPlace "Kamppi, Helsinki"
                          :from {:lat 60.168992 :lon 24.92366}
                          :toPlace "Pisa, Espoo"
@@ -31,7 +31,7 @@ Takes a GraphQL query in Hiccup syntax like this.
 
 And produces a GraphQL query string like this (without any pretty printing).
 
-```
+```clj
 {plan(fromPlace:"Kamppi, Helsinki",from:{lat:60.168992,lon:24.92366},toPlace:"Pisa, Espoo",to:{lat:60.175294,lon:24.684855},numItineraries:5,modes:"BICYCLE_RENT,BUS,WALK",walkReluctance:2.1,walkBoardCost:600,minTransferTime:180,walkSpeed:1.2,maxWalkDistance:10000){itineraries{walkDistance,duration,legs{mode startTime endTime from{lat lon name stop{code name}},to{lat lon name},agency{id},distance legGeometry{length points}}}}}
 ```
 
